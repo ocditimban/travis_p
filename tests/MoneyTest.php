@@ -19,7 +19,7 @@ class MoneyTest extends PHPUnit_Framework_TestCase
     {
         
         // Assert
-        $this->assertEquals(0, 1);
+        $this->assertEquals(0, 2);
     }
     // ...
 }
