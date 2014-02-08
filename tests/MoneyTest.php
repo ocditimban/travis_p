@@ -1,4 +1,7 @@
 <?php
+
+use Drupal\Component\Annotation\Action;
+
 class MoneyTest extends PHPUnit_Framework_TestCase
 {
     // ...
@@ -19,7 +22,7 @@ class MoneyTest extends PHPUnit_Framework_TestCase
     {
         
         // Assert
-        $this->assertEquals(1, 1);
+        $this->assertEquals(0, 1);
     }
 
     public function testCalculateRight()
@@ -28,4 +31,9 @@ class MoneyTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(0, 0);
     }
     // ...
+    public function testNamespace() {
+        $ac = new Action();
+        // Assert
+        $this->assertEquals('hello', $ac->getName('hello'));   
+    }
 }
