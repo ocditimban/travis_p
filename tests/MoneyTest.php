@@ -15,5 +15,11 @@ class MoneyTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(-1, $b->getAmount());
     }
 
+    public function testCalculate()
+    {
+        
+        // Assert
+        $this->assertEquals(0, 1);
+    }
     // ...
 }
